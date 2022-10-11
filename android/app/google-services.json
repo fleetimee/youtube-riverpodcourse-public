@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "431326746915",
+    "project_id": "instagram-clone-course-vandad",
+    "storage_bucket": "instagram-clone-course-vandad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431326746915:android:73627c9d08551c77f51496",
+        "android_client_info": {
+          "package_name": "se.pixolity.instagram_clone_course"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431326746915-k9ao0chju66v1i1he3gkejj4tcvilpm5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu9m7UP9AZq2ZHbfjR-9t68jsCARAIS8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431326746915-k9ao0chju66v1i1he3gkejj4tcvilpm5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
