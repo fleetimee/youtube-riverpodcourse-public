@@ -5,6 +5,7 @@ import 'package:instagram_clone_course/views/components/animations/data_not_foun
 import 'package:instagram_clone_course/views/components/animations/empty_contents_with_text_animation_view.dart';
 import 'package:instagram_clone_course/views/components/animations/error_animation_view.dart';
 import 'package:instagram_clone_course/views/components/post/posts_grid_view.dart';
+import 'package:instagram_clone_course/views/components/post/posts_sliver_grid_view.dart';
 import 'package:instagram_clone_course/views/constants/strings.dart';
 
 class SearchGridView extends ConsumerWidget {
@@ -18,8 +19,10 @@ class SearchGridView extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     if (searchTerm.isEmpty) {
-      return const EmptyContentsWithTextAnimationView(
-        text: Strings.enterYourSearchTerm,
+      return const SliverToBoxAdapter(
+        child: EmptyContentsWithTextAnimationView(
+          text: Strings.enterYourSearchTerm,
+        ),
       );
     }
 
@@ -32,19 +35,25 @@ class SearchGridView extends ConsumerWidget {
     return posts.when(
       data: (posts) {
         if (posts.isEmpty) {
-          return const DataNotFoundAnimationView();
+          return const SliverToBoxAdapter(
+            child: DataNotFoundAnimationView(),
+          );
         } else {
-          return PostsGridView(
+          return PostsSliverGridView(
             posts: posts,
           );
         }
       },
       error: (error, stackTrace) {
-        return const ErrorAnimationView();
+        return const SliverToBoxAdapter(
+          child: ErrorAnimationView(),
+        );
       },
       loading: () {
-        return const Center(
-          child: CircularProgressIndicator(),
+        return const SliverToBoxAdapter(
+          child: Center(
+            child: CircularProgressIndicator(),
+          ),
         );
       },
     );
