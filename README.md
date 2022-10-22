@@ -1,16 +1,5 @@
-# instagram_clone_course
+# Instagram Clone
 
-A new Flutter project.
+This is the source code for Vandad Nahavandipoor's Riverpod 2.x Course available on YouTube. [Click here](https://youtu.be/vtGCteFYs4M) to go to the course.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The backend for this project has been deleted and the Firebase configurations inside the project have been nulled-out as well for the sake of security. If you want to run this project and see how it works, first set up a Firebase instance for your project using Firebase's CLI!
